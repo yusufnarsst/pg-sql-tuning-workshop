@@ -33,6 +33,13 @@ PostgreSQL Tuning
 ### EXPLAIN ANALYZE
     * Gerçek metricler
 
+#### DB parametreleri
+
+export DBUSER=
+export DBNAME=
+export DBHOST=
+export PGPASSWORD=
+
 #### Demo 1: 1st access vs 2nd access, shared_hit vs disk read, sequential scan
 
 #### Demo 2: work_mem ve temp kullanımı

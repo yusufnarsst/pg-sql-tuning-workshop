@@ -1,6 +1,8 @@
-export PGPASSWORD="demo";psql -eq -h  db-dev.buybase.com -U demo -d workshop <<EOF
+export PGPASSWORD=${PGPASSWORD};psql -eqt -h  ${DBHOST} -U ${DBUSER}  -d ${DBNAME} <<EOF
 
 SET max_parallel_workers_per_gather = 0;
+
+\echo '----------------------------------------------------------create schema'
 
 create schema IF NOT EXISTS $1; 
 
