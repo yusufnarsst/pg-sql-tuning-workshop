@@ -2,6 +2,9 @@ export PGPASSWORD=${PGPASSWORD};psql -eqt -h  ${DBHOST} -U ${DBUSER}  -d ${DBNAM
 
 SET max_parallel_workers_per_gather = 0;
 
+\echo '----------------------------------------------------------SET work_mem (default:4M)'
+SET work_mem TO '4MB';
+
 \echo '----------------------------------------------------------create schema'
 create schema IF NOT EXISTS $1; 
 

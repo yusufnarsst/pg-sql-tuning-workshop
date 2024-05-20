@@ -33,8 +33,8 @@ SELECT
 FROM 
   demo1 
 WHERE 
-  id BETWEEN 1 
-  AND 100;
+  id BETWEEN 100000 
+  AND 100001;
 
 
 select status, count(*) from demo1 group by status;
