@@ -39,10 +39,16 @@ SET work_mem TO '16MB';
 
 #### DB parametreleri
 
+```
 export DBUSER=
 export DBNAME=
 export DBHOST=
 export PGPASSWORD=
+```
+
+Veritabanları parametreleri set edildikten sonra aşağıdaki komutta olduğu gibi demo'lar çalıştırılabilir.
+
+./demo-1.sh test
 
 #### Demo 1: 1st access vs 2nd access, shared_hit vs disk read, sequential scan
 
